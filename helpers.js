@@ -3,7 +3,7 @@ window.getObjValue = (obj, key, alternateValue = null) => {
         return alternateValue
     }
     if (!isObject(obj)) {
-        console.error("Please provide a object provided data is not a object")
+        console.error("Please provide a object provided data is not a object!")
         return
     }
     return obj[key] ? obj[key] : alternateValue
