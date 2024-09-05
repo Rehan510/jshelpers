@@ -11,7 +11,7 @@ window.getObjValue = (obj, key, alternateValue) => {
         current = current[keys[i]];
     }
 
-    return current;
+    return current?current:alternateValue
 }
 window.isObject = (value) => {
     return (
